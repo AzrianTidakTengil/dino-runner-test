@@ -12,12 +12,10 @@ let projectile: Sprite = null
 let mySprite: Sprite = null
 game.splash("Dino Runner", "AGER")
 scene.setBackgroundImage(assets.image`Background`)
- 
 tiles.setCurrentTilemap(tilemap`foreground`)
 scroller.scrollBackgroundWithSpeed(-100, 0)
 mySprite = sprites.create(assets.image`Player01`, SpriteKind.Player)
 mySprite.setPosition(26, 65)
-
 info.setScore(0)
 controller.moveSprite(mySprite, 0, 0)
 mySprite.ay = 300
