@@ -10,6 +10,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Projectile, function (sprite, ot
 })
 let projectile: Sprite = null
 let mySprite: Sprite = null
+game.splash("Dino Runner", "AGER")
 scene.setBackgroundImage(assets.image`Background`)
 tiles.setCurrentTilemap(tilemap`foreground`)
 scroller.scrollBackgroundWithSpeed(-100, 0)
